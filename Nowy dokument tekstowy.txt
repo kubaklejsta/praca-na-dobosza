@@ -1,0 +1,32 @@
+Ten kod przedstawia aplikację do zarządzania książkami w języku C#. Składa się z trzech klas:Ksiazka, Autor i Kategoria, a także z klasy Program zawierającej metodę Main
+Klasa Ksiazka
+Klasa Ksiazka reprezentuje pojedynczą książkę. Zawiera ona cztery właściwości:
+
+Tytul: Tytuł książki
+Autor: Obiekt typu Autor zawierający imię i nazwisko autora
+Kategoria: Obiekt typu Kategoria zawierający nazwę kategorii książki
+Opis: Opis książki
+Klasa zawiera również statyczną metodę DodajKsiazke(), która pobiera od użytkownika informacje o książce i zapisuje je w pliku JSON o nazwie "biblioteka.json".
+Klasa Autor
+Klasa Autor reprezentuje autora książki. Zawiera ona dwie właściwości:
+
+Imie: Imię autora
+Nazwisko: Nazwisko autora
+
+Klasa Kategoria
+Klasa Kategoria reprezentuje kategorię książki. Zawiera ona jedną właściwość:
+
+Nazwa: Nazwa kategorii
+
+Klasa Program
+Klasa Program zawiera metodę Main(), która jest punktem startowym aplikacji. Metoda ta zawiera również statyczną metodę WyswietlListeKsiazek(), która wyświetla listę wszystkich książek zapisanych w pliku "biblioteka.json".
+
+Główna funkcjonalność aplikacji jest realizowana w pętli while, która wyświetla menu z opcjami i pobiera od użytkownika wybór. W zależności od wybranej opcji wywoływana jest odpowiednia metoda:
+
+DodajKsiazke(): Dodaje nową książkę do bazy danych
+EdytujKsiazke(): Edytuje istniejącą książkę w bazie danych
+UsunKsiazke(): Usuwa książkę z bazy danych
+WyszukajKsiazke(): Wyszukuje książkę w bazie danych
+WyswietlListeKsiazek(): Wyświetla listę wszystkich książek w bazie danych
+Wyjdz(): Zamyka aplikację
+Ten kod prezentuje prostą aplikację do zarządzania książkami w języku C#. Używa klas do reprezentowania książek, autorów i kategorii, a także plików JSON do przechowywania danych.
